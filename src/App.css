@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --Red_400: hsl(7, 99%, 70%);
+    --Yellow_500: hsl(51, 100%, 49%);
+    --Green_800: hsl(167, 40%, 24%);
+    --Blue_800: hsl(198, 62%, 26%);
+    --Green_500: hsl(167, 34%, 41%);
+    --Grey_950: hsl(212, 27%, 19%);
+    --Grey_600: hsl(213, 9%, 39%);
+    --Grey_550: hsl(232, 10%, 55%);
+    --Grey_400: hsl(210, 4%, 67%);
+    --White: hsl(0, 100%, 100%);
+    --Fs: 18px
+
+}
+
+body{
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: var(--Fs);
+    overflow-x: hidden;
+}
+
+.heading_1{
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+}
+.heading_2{
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+}
+
+.overlay-container {
+  display: grid;
+}
+
+.overlay-container img {
+  grid-area: 1 / 1; 
+  width: 100%;
+  height: auto;
+}
+
+.overlay-text {
+  grid-area: 1 / 1; 
+  place-self: center; 
+  color:var(--Green_500);
+  text-align: center;
+  padding-top: 300px;
+  width: 55%;
+}
+.overlay-text h2 {
+    color: var(--Green_800);
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+
+

@@ -6,6 +6,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+    /* overflow-x: hidden; */
 }
 
 :root{
@@ -56,11 +57,31 @@ body{
     overflow: hidden;
 }
 
+.card {
+    grid-column: auto;
+    grid-row: auto;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr; 
+  }
+
+  .card:nth-child(1) {
+    grid-row: 2;
+  }
+  .card:nth-child(2) {
+    grid-row: 1;
+  }
+
+
+}
+
 .overlay-container {
   display: grid;
 }
 
-.overlay-container img {
+.overlay-container img, .overlay-container picture {
   grid-area: 1 / 1; 
   width: 100%;
   height: auto;

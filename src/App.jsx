@@ -28,12 +28,13 @@ const cardsData = [
   {
     imageDesktop: img2Desktop,
     imageMobile: img2Mobile,
+    background: "hsl(51, 100%, 49%)",
     order: 2
   },
   {
     imageDesktop: img3Desktop,
     imageMobile: img3Mobile,
-    background: "hsl(7, 99%, 70%)",
+    background: "rgb(255, 111, 97)",
     order: 3
   },
   {
@@ -72,6 +73,7 @@ function App() {
         {cardsData.map((card, index) => (
           <Card 
             key={index}
+            index={index}
             title={card.title}
             description={card.description}
             imageDesktop={card.imageDesktop}   

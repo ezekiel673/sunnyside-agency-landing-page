@@ -104,7 +104,7 @@ const Card = ({ title, description, imageDesktop, imageMobile, link, overlay, ba
                 color: "var(--Grey_950)",
                 textDecoration: "none",
                 position: "relative",
-                display: isMobile ? "block" : "inline-block", // <-- block on mobile so margin auto centers it
+                display: isMobile ? "block" : "inline-block", 
                 paddingBottom: "6px",
                 margin: isMobile ? "20px 30%" : "0 0 0 70px",
                 textAlign: "center",

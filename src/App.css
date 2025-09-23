@@ -6,7 +6,6 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    /* overflow-x: hidden; */
 }
 
 :root{
@@ -24,12 +23,12 @@
 
 }
 
-body{
-    font-family: "Barlow", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: var(--Fs);
-    overflow-x: hidden;
+body, html{
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: var(--Fs);
+  overflow-x: hidden;
 }
 
 .heading_1{

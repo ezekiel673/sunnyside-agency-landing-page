@@ -156,7 +156,6 @@ const ulStyles = {
   alignItems: "center",
 };
 
-/* Dropdown container */
 const dropdownWrapper = {
   position: "absolute",
   top: "70px",
@@ -164,7 +163,6 @@ const dropdownWrapper = {
   zIndex: 1000,
 };
 
-/* Dropdown box */
 const dropdownMenu = {
   background: "var(--White)",
   padding: "2rem",
@@ -177,14 +175,12 @@ const dropdownMenu = {
   textAlign: "center",
 };
 
-/* Arrow shape */
 const dropdownArrow = {
   position: "absolute",
   top: "-20px",
   right:'0',
   width: "0",
   height: "0",
-//   borderRight: "0 solid transparent",
   borderLeft: "20px solid transparent",
   borderBottom: "20px solid var(--White)",
 };
